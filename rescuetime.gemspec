@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'bin'
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.0.0', '< 2.4'
+  spec.required_ruby_version = '>= 2.0.0'
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake', '~> 10.4', '>= 10.4.2'
@@ -28,6 +28,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.2', '>= 3.2.0'
   spec.add_development_dependency 'rspec-its'
   spec.add_development_dependency 'vcr', '~> 2.9', '>= 2.9.3'
-  spec.add_development_dependency 'webmock', '~> 1.21', '>= 1.21.0'
+  spec.add_development_dependency 'webmock', '~> 2', '>= 1.21.0'
   spec.add_development_dependency 'timecop', '~> 0.8.0'
+
+  spec.add_development_dependency 'pry'
 end

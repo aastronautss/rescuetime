@@ -93,8 +93,7 @@ module Rescuetime
     def parse_response(body)
       report = CSV.new(body,
                        headers: true,
-                       header_converters: :symbol,
-                       converters: :all)
+                       header_converters: :symbol)
 
       format           = @format.to_s.downcase
       report_formatter = formatters.find(format)
